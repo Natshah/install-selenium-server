@@ -1,5 +1,6 @@
-# Selenium Server
-# Installing and configuring selenium server to work for each automated testing session #
+### Selenium Server
+# Installing and configuring selenium server to work for each automated testing session
+
 
 Some time I do test using some internal or external selenium server, but they
 do not have the option of restarting every thing from the beginning .
