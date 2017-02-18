@@ -54,6 +54,7 @@ If you want to Uninstall :
 $  sh ./uninstall-selenium-server.sh
 ```
 ================================================================================
+
 Then Reboot.
 
 The only thing we do need is a reset Button to restart the selenium server to 
