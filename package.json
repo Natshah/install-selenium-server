@@ -1,6 +1,6 @@
 {
   "name": "install-selenium-server",
-  "version": "2.48.0",
+  "version": "2.48.1",
   "description": "Installing and configuring selenium server for automated testing sessions.",
   "main": "no",
   "scripts": {
