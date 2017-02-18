@@ -1,6 +1,6 @@
 ## Selenium server configurations.
-version: 2.40.0
+version: 2.41.0
 major_version: 2
-minor_version: 40
+minor_version: 41
 patch_version: 0
 port: 4445
