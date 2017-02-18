@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Parse yaml data.
+# Parse yaml configurations.
 parse_yaml_config() {
    local prefix=$2
    local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
@@ -26,8 +26,8 @@ case "${1:-''}" in
         then
             echo "Selenium is already running."
         else
-            java -jar /usr/lib/selenium/selenium-server-standalone.jar -port $config_selenium_port > /var/log/selenium/output.log 2> /var/log/selenium/error.log & echo $! > /tmp/selenium.pid
-            echo "[  OK  ] Starting Selenium on the $config_selenium_port port ..."
+            java -jar /usr/lib/selenium/selenium-server-standalone.jar -port $config_port > /var/log/selenium/output.log 2> /var/log/selenium/error.log & echo $! > /tmp/selenium.pid
+            echo "[  OK  ] Starting Selenium on the $config_port port ..."
 
             error=$?
             if test $error -gt 0
@@ -59,8 +59,8 @@ case "${1:-''}" in
             kill -HUP `cat /tmp/selenium.pid`
             test -f /tmp/selenium.pid && rm -f /tmp/selenium.pid
             sleep 1
-            java -jar /usr/lib/selenium/selenium-server-standalone.jar -port 4445 > /var/log/selenium/output.log 2> /var/log/selenium/error.log & echo $! > /tmp/selenium.pid
-            echo "[  OK  ] Reload Selenium on the {$config_selenium_port} port ..."
+            java -jar /usr/lib/selenium/selenium-server-standalone.jar -port $config_port > /var/log/selenium/output.log 2> /var/log/selenium/error.log & echo $! > /tmp/selenium.pid
+            echo "[  OK  ] Reload Selenium on the {$config_port} port ..."
         else
             echo "[ Error ] Selenium isn't running..."
         fi
