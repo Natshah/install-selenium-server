@@ -1,0 +1,25 @@
+{
+  "name": "install-selenium-server",
+  "version": "2.39.0",
+  "description": "Installing and configuring selenium server to work for each automated testing session",
+  "main": "no",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natshah/install-selenium-server.git"
+  },
+  "keywords": [
+    "selenium",
+    "server",
+    "install",
+    "robot"
+  ],
+  "author": "Rajab Natshah <rajabn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Natshah/install-selenium-server/issues"
+  },
+  "homepage": "https://github.com/Natshah/install-selenium-server#readme"
+}
