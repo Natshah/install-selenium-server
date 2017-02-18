@@ -22,18 +22,10 @@ $ sudo apt-get install openjdk-8-jre
 
 ================================================================================
 
-
-Run the following command to install selenium server 2.53.1:
+Run the following command to install selenium server:
 ================================================================================
 
-$  sh ./install-selenium-server-2.53.1.sh
-
-================================================================================
-
-Run the following command to install selenium server 3.0.1:
-================================================================================
-
-$  sh ./install-selenium-server-3.0.1.sh
+$  sh ./install-selenium-server.sh
 
 ================================================================================
 
