@@ -35,7 +35,7 @@ if [ ! -d "/usr/lib/selenium" ]; then
   echo "Created selenium directory in /usr/lib.\n"
 
   echo "Getting selenium server standalone $config_version\n"
-  sudo wget http://selenium-release.storage.googleapis.com/$config_major_version.$config_minor_version/selenium-server-standalone-$config_major_version.$config_minor_version.$config_major_version.$config_patch_version.jar
+  sudo wget http://selenium-release.storage.googleapis.com/$config_major_version.$config_minor_version/selenium-server-standalone-$config_major_version.$config_minor_version.$config_patch_version.jar
   sudo mv selenium-server-standalone-$config_major_version.$config_minor_version.$config_patch_version.jar /usr/lib/selenium/selenium-server-standalone-$config_major_version.$config_minor_version.$config_patch_version.jar
   sudo ln -s /usr/lib/selenium/selenium-server-standalone-$config_major_version.$config_minor_version.$config_patch_version.jar /usr/lib/selenium/selenium-server-standalone.jar
   echo "The selenium server standalone is ready in the server.\n"
