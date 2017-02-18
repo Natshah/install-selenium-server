@@ -1,6 +1,6 @@
 {
     "name": "natshah/install-selenium-server",
-    "description": "Installing and configuring selenium server to work for each automated testing session",
+    "description": "Installing and configuring selenium server for automated testing sessions.",
     "type": "composer-plugin",
     "license": "MIT",
     "authors": [

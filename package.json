@@ -1,7 +1,7 @@
 {
   "name": "install-selenium-server",
-  "version": "2.39.0",
-  "description": "Installing and configuring selenium server to work for each automated testing session",
+  "version": "2.53.1",
+  "description": "Installing and configuring selenium server for automated testing sessions.",
   "main": "no",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
