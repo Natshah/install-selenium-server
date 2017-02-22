@@ -13,16 +13,7 @@ I made this list of scripts with a basic installer which:
 - Have Selenium standalone server, It will be downloaded and installed on your localhost or server.
 - Then selenium will start working after reboots.
 - This selenium server will start at the 4445 port number.
-- We can contrule and change the version from the config.yml file
-
-```
-## Selenium server configurations.
-version: 3.1.0
-major_version: 3
-minor_version: 1
-patch_version: 0
-port: 4445
-```
+- Control and change the version, port settings from the config.yml file.
 
 
 You will need to have Java first.
@@ -69,7 +60,17 @@ Then Reboot.
 The only thing we do need is a reset Button to restart the selenium server to 
 work in a new automated testing session.
 
+Selenium server config : config.yml
+================================================================================
 If you want to change the port number, you could do that by editing the config.yml server config file:
+```
+## Selenium server configurations.
+version: 3.1.0
+major_version: 3
+minor_version: 1
+patch_version: 0
+port: 4445
+```
 
 ```
 $ sudo vim /etc/selenium/config.yml
